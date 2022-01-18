@@ -25,11 +25,11 @@ function DepthTabs(){
     ## If they are, we start creating spaces in tabs variable according to the depth of the current directory/file
     for i in $(seq $((${#DEPTH}-1)))
       do
-        tabs="${tabs}   "
+        tabs="${tabs}${tabs}"
       done
   else
   ## If not we don't want any spaces
-  tabs="  "
+  tabs=""
   fi
 }
 
