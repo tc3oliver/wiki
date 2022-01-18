@@ -1,10 +1,8 @@
-- [首頁](/)
-- 未整理筆記
-
-  - [雜記](/note.md '雜記')
-
-- test
-
-  - [test](/test.md '測試標題')
-
-- [blockchain](/blockchain/)
+* [Home](/)
+  * [**wiki**](/wiki/)
+     * [**區塊鏈**](/wiki/區塊鏈/)
+        * [test1](/wiki/區塊鏈/test1.md)
+        * [test2](/wiki/區塊鏈/test2.md)
+     * [**未整理**](/wiki/未整理/)
+        * [test](/wiki/未整理/test.md)
+        * [敏捷開發](/wiki/未整理/敏捷開發.md)

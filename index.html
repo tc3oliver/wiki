@@ -21,9 +21,11 @@
         name: "Nick's Wiki",
         repo: 'https://github.com/tc3oliver',
         subMaxLevel: 2,
+        loadNavbar: false,
         loadSidebar: true,
         alias: {
           '/.*/_sidebar.md': '/_sidebar.md',
+          '/blockchain/.*/_sidebar.md': '/blockchain/_sidebar.md',
         },
         search: {
           paths: 'auto',
@@ -31,6 +33,7 @@
           noData: '找不到結果',
           depth: 3,
         },
+        
       }
     </script>
     <!-- Docsify v4 -->
@@ -40,7 +43,7 @@
     <!-- 圖片縮放 -->
     <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/zoom-image.min.js"></script>
     <!-- 複製到剪貼簿 -->
-    <script src="//cdn.jsdelivr.net/npm/docsify-copy-code"></script>
+    <script src="https://cdn.jsdelivr.net/npm/docsify-copy-code@2.1.1/dist/docsify-copy-code.min.js"></script>
     <!-- 字數統計 -->
     <script src="//unpkg.com/docsify-count/dist/countable.js"></script>
     <!-- 語言高亮 -->
