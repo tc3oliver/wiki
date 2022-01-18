@@ -6,4 +6,4 @@
 
   - [test](docs/test.md '測試標題')
 
-- [blockchain](docs/blockchain/)
+- [blockchain](blockchain/)
