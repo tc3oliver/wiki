@@ -2,7 +2,5 @@
 * [**wiki**](/wiki/)
     * [**區塊鏈**](/wiki/區塊鏈/)
         * [01以太坊官方客戶端-Geth](/wiki/區塊鏈/01以太坊官方客戶端-Geth.md)
-        * [test2](/wiki/區塊鏈/test2.md)
     * [**未整理**](/wiki/未整理/)
-        * [test](/wiki/未整理/test.md)
         * [敏捷開發](/wiki/未整理/敏捷開發.md)
