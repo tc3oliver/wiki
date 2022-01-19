@@ -59,10 +59,7 @@
         //     ? 'home'
         //     : decodeURI(location.hash).split('#/')[1]
         // ],
-        id:
-          md5(location.hash) === '#/'
-            ? 'home'
-            : md5(location.hash).split('#/')[1],
+        id: md5(location.hash)
       }
       window.$docsify = {
         name: "Nick's Wiki",
