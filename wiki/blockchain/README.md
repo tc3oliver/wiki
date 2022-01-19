@@ -1,6 +1,5 @@
 # Bolckchain
 
-## 參考資料
 ## References
 
 ### 鐵人賽
@@ -17,6 +16,7 @@
 - [ ] [想學區塊鏈？跨出這幾步自然上軌道](https://guenterchao.medium.com/%E5%8D%80%E5%A1%8A%E9%8F%88%E7%A8%8B%E8%A8%AD%E5%AD%B8%E7%BF%92%E5%9C%B0%E5%9C%96%E8%88%87%E8%B3%87%E6%BA%90-a4a63d56365c)
 
 ### 系列
-1. [Ethereum 區塊鏈！智能合約(Smart Contract)與分散式網頁應用(dApp)入門](https://gasolin.gitbooks.io/learn-ethereum-dapp/content/)
-2. [easonwang gitbook](https://easonwang.gitbook.io/blockchain/)
-3. [区块链技术博客](https://me.tryblockchain.org/index.html)
+
+- [ ] [Ethereum 區塊鏈！智能合約(Smart Contract)與分散式網頁應用(dApp)入門](https://gasolin.gitbooks.io/learn-ethereum-dapp/content/)
+- [ ] [easonwang gitbook](https://easonwang.gitbook.io/blockchain/)
+- [ ] [区块链技术博客](https://me.tryblockchain.org/index.html)
