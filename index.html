@@ -46,6 +46,15 @@
   <body>
     <div id="app">載入中...</div>
     <script>
+      var gitalkConfig = {
+        clientID: '4a0d3755ec132e662062',
+        clientSecret: 'a77a509de2f5c64cc53f95d839f23d8fb01c00fd',
+        repo: 'wiki',
+        accessToken: '30c55e31acbb0cb61d30f92d14e32541880eefaf',
+        owner: 'tc3oliver',
+        admin: ['tc3oliver'],
+        distractionFreeMode: false,
+      }
       window.$docsify = {
         name: "Nick's Wiki",
         repo: 'https://github.com/tc3oliver',
@@ -68,12 +77,40 @@
           telegram: true,
         },
         plugins: [
-          EditOnGithubPlugin.create('https://github.com/tc3oliver/wiki/tree/main/',),
+          EditOnGithubPlugin.create(
+            'https://github.com/tc3oliver/wiki/tree/main/',
+          ),
+          function (hook, vm) {
+            hook.doneEach(function () {
+              var label, domObj, main, divEle, gitalk
+              label = vm.route.path.split('/').pop()
+              domObj = Docsify.dom
+              main = domObj.getNode('#main')
+
+              Array.apply(
+                null,
+                document.querySelectorAll('div.gitalk-container'),
+              ).forEach(function (ele) {
+                ele.remove()
+              })
+
+              divEle = domObj.create('div')
+              divEle.id = 'gitalk-container-' + label
+              divEle.className = 'gitalk-container'
+              divEle.style =
+                'width: ' + main.clientWidth + 'px; margin: 0 auto 20px;'
+              domObj.appendTo(domObj.find('.content'), divEle)
+              gitalk = new Gitalk(
+                Object.assign(gitalkConfig, { id: !label ? 'home' : label }),
+              )
+              gitalk.render('gitalk-container-' + label)
+            })
+          },
         ],
       }
     </script>
     <!-- md5 -->
-    <script src="https://cdn.jsdelivr.net/npm/js-md5@0.7.3/src/md5.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/js-md5@0.7.3/src/md5.min.js"></script>
     <!-- Docsify v4 -->
     <script src="//cdn.jsdelivr.net/npm/docsify@4"></script>
     <!-- 全文搜尋 -->
@@ -96,7 +133,7 @@
     <!-- Gitalk -->
     <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/gitalk.min.js"></script>
     <script src="//cdn.jsdelivr.net/npm/gitalk/dist/gitalk.min.js"></script>
-    <script>
+    <!-- <script>
       const gitalk = new Gitalk({
         clientID: '4a0d3755ec132e662062',
         clientSecret: 'a77a509de2f5c64cc53f95d839f23d8fb01c00fd',
@@ -104,9 +141,9 @@
         owner: 'tc3oliver',
         admin: ['tc3oliver'],
         distractionFreeMode: false,
-        id: md5(location.href)
+        id: md5(location.href),
       })
-    </script>
+    </script> -->
     <!-- 分享 -->
     <script src="//unpkg.com/docsify-share/build/index.min.js"></script>
   </body>
