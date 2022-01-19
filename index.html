@@ -84,7 +84,7 @@
           function (hook, vm) {
             hook.doneEach(function () {
               var label, domObj, main, divEle, gitalk
-              label = vm.route.path.split('/').pop()
+              label = decodeURI(location.hash) === '#/' ? 'home' : decodeURI(location.hash).split('#/')[1]
               domObj = Docsify.dom
               main = domObj.getNode('#main')
 
@@ -110,7 +110,7 @@
         ],
       }
     </script>
-    
+
     <!-- Gitalk -->
     <script src="//unpkg.com/gitalk/dist/gitalk.min.js"></script>
     
