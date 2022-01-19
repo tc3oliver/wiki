@@ -14,10 +14,7 @@
       href="//cdn.jsdelivr.net/npm/docsify@4/lib/themes/vue.css"
     />
     <!-- Gitalk -->
-    <link
-      rel="stylesheet"
-      href="//cdn.jsdelivr.net/npm/gitalk/dist/gitalk.css"
-    />
+    <link rel="stylesheet" href="//unpkg.com/gitalk/dist/gitalk.css" />
     <style>
       .fabs {
         z-index: 9999;
@@ -45,8 +42,6 @@
   </head>
   <body>
     <div id="app">載入中...</div>
-    <!-- Gitalk -->
-    <script src="//cdn.jsdelivr.net/npm/gitalk/dist/gitalk.min.js"></script>
     <script>
       var gitalkConfig = {
         clientID: '4a0d3755ec132e662062',
@@ -112,7 +107,7 @@
       }
     </script>
     <!-- Gitalk -->
-    <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/gitalk.min.js"></script>
+    <script src="//unpkg.com/gitalk/dist/gitalk.min.js"></script>
     <!-- md5 -->
     <script src="//cdn.jsdelivr.net/npm/js-md5@0.7.3/src/md5.min.js"></script>
     <!-- Docsify v4 -->
@@ -134,7 +129,7 @@
     <script src="//cdn.jsdelivr.net/npm/prismjs/components/prism-go.min.js"></script>
     <script src="//cdn.jsdelivr.net/npm/prismjs/components/prism-java.min.js"></script>
     <script src="//cdn.jsdelivr.net/npm/prismjs/components/prism-csharp.min.js"></script>
-    
+
     <!-- <script>
       const gitalk = new Gitalk({
         clientID: '4a0d3755ec132e662062',
