@@ -42,6 +42,8 @@
   </head>
   <body>
     <div id="app">載入中...</div>
+    <!-- md5 -->
+    <script src="//cdn.jsdelivr.net/npm/js-md5@0.7.3/src/md5.min.js"></script>
     <script>
       var gitalkConfig = {
         clientID: '4a0d3755ec132e662062',
@@ -51,16 +53,16 @@
         owner: 'tc3oliver',
         admin: ['tc3oliver'],
         distractionFreeMode: false,
-        labels: [
-          'Gitalk',
-          decodeURI(location.hash) === '#/'
-            ? 'home'
-            : decodeURI(location.hash).split('#/')[1],
-        ],
+        // labels: [
+        //   'Gitalk',
+        //   decodeURI(location.hash) === '#/'
+        //     ? 'home'
+        //     : decodeURI(location.hash).split('#/')[1]
+        // ],
         id:
-          decodeURI(location.hash) === '#/'
+          md5(location.hash) === '#/'
             ? 'home'
-            : decodeURI(location.hash).split('#/')[1],
+            : md5(location.hash).split('#/')[1],
       }
       window.$docsify = {
         name: "Nick's Wiki",
@@ -118,8 +120,7 @@
     </script>
     <!-- Gitalk -->
     <script src="//unpkg.com/gitalk/dist/gitalk.min.js"></script>
-    <!-- md5 -->
-    <script src="//cdn.jsdelivr.net/npm/js-md5@0.7.3/src/md5.min.js"></script>
+    
     <!-- Docsify v4 -->
     <script src="//cdn.jsdelivr.net/npm/docsify@4"></script>
     <!-- 全文搜尋 -->
