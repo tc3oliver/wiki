@@ -134,15 +134,7 @@
     <script src="//cdn.jsdelivr.net/npm/prismjs/components/prism-csharp.min.js"></script>
 
     <script>
-      const gitalk = new Gitalk({
-        clientID: '4a0d3755ec132e662062',
-        clientSecret: 'a77a509de2f5c64cc53f95d839f23d8fb01c00fd',
-        repo: 'wiki',
-        owner: 'tc3oliver',
-        admin: ['tc3oliver'],
-        distractionFreeMode: false,
-        id: decodeURI(location.hash) === '#/' ? 'home' : decodeURI(location.hash).split('#/')[1],
-      })
+      const gitalk = new Gitalk(gitalkConfig)
     </script>
     <!-- 分享 -->
     <script src="//unpkg.com/docsify-share/build/index.min.js"></script>
