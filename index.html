@@ -19,6 +19,11 @@
       title="docsify-darklight-theme"
       type="text/css"
     />
+    <!-- Gitalk -->
+    <link
+      rel="stylesheet"
+      href="//cdn.jsdelivr.net/npm/gitalk/dist/gitalk.css"
+    />
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script
       async
@@ -94,16 +99,10 @@
     <script src="//cdn.jsdelivr.net/npm/prismjs/components/prism-go.min.js"></script>
     <script src="//cdn.jsdelivr.net/npm/prismjs/components/prism-java.min.js"></script>
     <script src="//cdn.jsdelivr.net/npm/prismjs/components/prism-csharp.min.js"></script>
-    <!-- 分享 -->
-    <script src="//unpkg.com/docsify-share/build/index.min.js"></script>
+    
     <!-- 主題 -->
     <script src="//cdn.jsdelivr.net/npm/docsify-darklight-theme@latest/dist/index.min.js"></script>
     <!-- Gitalk -->
-    <link
-      rel="stylesheet"
-      href="//cdn.jsdelivr.net/npm/gitalk/dist/gitalk.css"
-    />
-
     <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/gitalk.min.js"></script>
     <script src="//cdn.jsdelivr.net/npm/gitalk/dist/gitalk.min.js"></script>
     <script>
@@ -113,9 +112,10 @@
         repo: 'wiki',
         owner: 'tc3oliver',
         admin: ['tc3oliver'],
-        // facebook-like distraction free mode
         distractionFreeMode: true,
       })
     </script>
+    <!-- 分享 -->
+    <script src="//unpkg.com/docsify-share/build/index.min.js"></script>
   </body>
 </html>
