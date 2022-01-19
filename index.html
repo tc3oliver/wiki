@@ -84,7 +84,7 @@
           function (hook, vm) {
             hook.doneEach(function () {
               var label, domObj, main, divEle, gitalk
-              label = decodeURI(location.hash) === '#/' ? 'home' : decodeURI(location.hash).split('#/')[1]
+              label = decodeURI(location.hash) === '#/' ? 'home' : decodeURI(location.hash).split('/').filter(word => word.length > 1).pop()
               domObj = Docsify.dom
               main = domObj.getNode('#main')
 
