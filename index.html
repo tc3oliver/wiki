@@ -81,35 +81,38 @@
           EditOnGithubPlugin.create(
             'https://github.com/tc3oliver/wiki/tree/main/',
           ),
-          // function (hook, vm) {
-          //   hook.doneEach(function () {
-          //     var label, domObj, main, divEle, gitalk
-          //     label = vm.route.path.split('/').pop()
-          //     domObj = Docsify.dom
-          //     main = domObj.getNode('#main')
+          function (hook, vm) {
+            hook.doneEach(function () {
+              var label, domObj, main, divEle, gitalk
+              label = vm.route.path.split('/').pop()
+              domObj = Docsify.dom
+              main = domObj.getNode('#main')
 
-          //     Array.apply(
-          //       null,
-          //       document.querySelectorAll('div.gitalk-container'),
-          //     ).forEach(function (ele) {
-          //       ele.remove()
-          //     })
+              Array.apply(
+                null,
+                document.querySelectorAll('div.gitalk-container'),
+              ).forEach(function (ele) {
+                ele.remove()
+              })
 
-          //     divEle = domObj.create('div')
-          //     divEle.id = 'gitalk-container-' + label
-          //     divEle.className = 'gitalk-container'
-          //     divEle.style =
-          //       'width: ' + main.clientWidth + 'px; margin: 0 auto 20px;'
-          //     domObj.appendTo(domObj.find('.content'), divEle)
-          //     gitalk = new Gitalk(
-          //       Object.assign(gitalkConfig, { id: !label ? 'home' : label }),
-          //     )
-          //     gitalk.render('gitalk-container-' + label)
-          //   })
-          // },
+              divEle = domObj.create('div')
+              divEle.id = 'gitalk-container-' + label
+              divEle.className = 'gitalk-container'
+              divEle.style =
+                'width: ' + main.clientWidth + 'px; margin: 0 auto 20px;'
+              domObj.appendTo(domObj.find('.content'), divEle)
+              gitalk = new Gitalk(
+                Object.assign(gitalkConfig, { id: !label ? 'home' : label }),
+              )
+              gitalk.render('gitalk-container-' + label)
+            })
+          },
         ],
       }
     </script>
+    
+    <!-- Gitalk -->
+    <script src="//unpkg.com/gitalk/dist/gitalk.min.js"></script>
     
     
     <!-- Docsify v4 -->
@@ -133,11 +136,11 @@
     <script src="//cdn.jsdelivr.net/npm/prismjs/components/prism-csharp.min.js"></script>
 
     <!-- Gitalk -->
-    <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/gitalk.min.js"></script>
-    <script src="//cdn.jsdelivr.net/npm/gitalk/dist/gitalk.min.js"></script>
-    <script>
+    <!-- <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/gitalk.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/gitalk/dist/gitalk.min.js"></script> -->
+    <!-- <script>
       const gitalk = new Gitalk(gitalkConfig)
-    </script>
+    </script> -->
     <!-- 分享 -->
     <script src="//unpkg.com/docsify-share/build/index.min.js"></script>
   </body>
