@@ -51,6 +51,10 @@
         owner: 'tc3oliver',
         admin: ['tc3oliver'],
         distractionFreeMode: false,
+        id:
+          decodeURI(location.hash) === '#/'
+            ? 'home'
+            : decodeURI(location.hash).split('#/')[1],
       }
       window.$docsify = {
         name: "Nick's Wiki",
@@ -138,7 +142,7 @@
         owner: 'tc3oliver',
         admin: ['tc3oliver'],
         distractionFreeMode: false,
-        id: md5(location.href),
+        id: decodeURI(location.hash) === '#/' ? 'home' : decodeURI(location.hash).split('#/')[1],
       })
     </script> -->
     <!-- 分享 -->
