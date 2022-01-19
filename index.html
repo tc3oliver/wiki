@@ -53,13 +53,8 @@
         owner: 'tc3oliver',
         admin: ['tc3oliver'],
         distractionFreeMode: false,
-        // labels: [
-        //   'Gitalk',
-        //   decodeURI(location.hash) === '#/'
-        //     ? 'home'
-        //     : decodeURI(location.hash).split('#/')[1]
-        // ],
-        id: md5(location.hash)
+        labels: ['Gitalk'],
+        id: md5(location.hash),
       }
       window.$docsify = {
         name: "Nick's Wiki",
@@ -86,32 +81,32 @@
           EditOnGithubPlugin.create(
             'https://github.com/tc3oliver/wiki/tree/main/',
           ),
-          function (hook, vm) {
-            hook.doneEach(function () {
-              var label, domObj, main, divEle, gitalk
-              label = vm.route.path.split('/').pop()
-              domObj = Docsify.dom
-              main = domObj.getNode('#main')
+          // function (hook, vm) {
+          //   hook.doneEach(function () {
+          //     var label, domObj, main, divEle, gitalk
+          //     label = vm.route.path.split('/').pop()
+          //     domObj = Docsify.dom
+          //     main = domObj.getNode('#main')
 
-              Array.apply(
-                null,
-                document.querySelectorAll('div.gitalk-container'),
-              ).forEach(function (ele) {
-                ele.remove()
-              })
+          //     Array.apply(
+          //       null,
+          //       document.querySelectorAll('div.gitalk-container'),
+          //     ).forEach(function (ele) {
+          //       ele.remove()
+          //     })
 
-              divEle = domObj.create('div')
-              divEle.id = 'gitalk-container-' + label
-              divEle.className = 'gitalk-container'
-              divEle.style =
-                'width: ' + main.clientWidth + 'px; margin: 0 auto 20px;'
-              domObj.appendTo(domObj.find('.content'), divEle)
-              gitalk = new Gitalk(
-                Object.assign(gitalkConfig, { id: !label ? 'home' : label }),
-              )
-              gitalk.render('gitalk-container-' + label)
-            })
-          },
+          //     divEle = domObj.create('div')
+          //     divEle.id = 'gitalk-container-' + label
+          //     divEle.className = 'gitalk-container'
+          //     divEle.style =
+          //       'width: ' + main.clientWidth + 'px; margin: 0 auto 20px;'
+          //     domObj.appendTo(domObj.find('.content'), divEle)
+          //     gitalk = new Gitalk(
+          //       Object.assign(gitalkConfig, { id: !label ? 'home' : label }),
+          //     )
+          //     gitalk.render('gitalk-container-' + label)
+          //   })
+          // },
         ],
       }
     </script>
@@ -138,7 +133,7 @@
     <script src="//cdn.jsdelivr.net/npm/prismjs/components/prism-java.min.js"></script>
     <script src="//cdn.jsdelivr.net/npm/prismjs/components/prism-csharp.min.js"></script>
 
-    <!-- <script>
+    <script>
       const gitalk = new Gitalk({
         clientID: '4a0d3755ec132e662062',
         clientSecret: 'a77a509de2f5c64cc53f95d839f23d8fb01c00fd',
@@ -148,7 +143,7 @@
         distractionFreeMode: false,
         id: decodeURI(location.hash) === '#/' ? 'home' : decodeURI(location.hash).split('#/')[1],
       })
-    </script> -->
+    </script>
     <!-- 分享 -->
     <script src="//unpkg.com/docsify-share/build/index.min.js"></script>
   </body>
