@@ -26,10 +26,17 @@
     />
     <style>
       .fabs {
+        bottom: 0;
+        position: fixed;
+        margin: 1em;
+        right: 0;
         z-index: 9999;
       }
       .gt-container .gt-header-comment {
+        -webkit-box-flex: 1;
+        -ms-flex: 1;
         flex: 0.7;
+        margin-left: 1.25em;
       }
     </style>
     <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -74,17 +81,7 @@
           telegram: true,
         },
         plugins: [
-          EditOnGithubPlugin.create(
-            'https://github.com/tc3oliver/wiki/tree/main/',
-            null,
-            function (file) {
-              if (file.indexOf('en') === -1) {
-                return '編輯'
-              } else {
-                return 'edit on git'
-              }
-            },
-          ),
+          EditOnGithubPlugin.create('https://github.com/tc3oliver/wiki/tree/main/',),
         ],
       }
     </script>
@@ -107,9 +104,6 @@
     <script src="//cdn.jsdelivr.net/npm/prismjs/components/prism-go.min.js"></script>
     <script src="//cdn.jsdelivr.net/npm/prismjs/components/prism-java.min.js"></script>
     <script src="//cdn.jsdelivr.net/npm/prismjs/components/prism-csharp.min.js"></script>
-
-    <!-- 主題 -->
-    <script src="//cdn.jsdelivr.net/npm/docsify-darklight-theme@latest/dist/index.min.js"></script>
     <!-- Gitalk -->
     <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/gitalk.min.js"></script>
     <script src="//cdn.jsdelivr.net/npm/gitalk/dist/gitalk.min.js"></script>
