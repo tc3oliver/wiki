@@ -58,6 +58,19 @@
           whatsapp: true,
           telegram: true,
         },
+        plugins: [
+          EditOnGithubPlugin.create(
+            'https://github.com/tc3oliver/wiki/tree/main/wiki',
+            null,
+            function (file) {
+              if (file.indexOf('en') === -1) {
+                return '編輯'
+              } else {
+                return 'edit on git'
+              }
+            },
+          ),
+        ],
       }
     </script>
     <!-- Docsify v4 -->
@@ -83,5 +96,7 @@
     <script src="//unpkg.com/docsify-share/build/index.min.js"></script>
     <!-- 主題 -->
     <script src="//cdn.jsdelivr.net/npm/docsify-darklight-theme@latest/dist/index.min.js"></script>
+    <!-- 在github編輯 -->
+    <script src="//cdn.jsdelivr.net/npm/docsify-edit-on-github"></script>
   </body>
 </html>
