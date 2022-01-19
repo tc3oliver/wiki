@@ -1,6 +1,6 @@
 * [Home](/)
 * [**wiki**](/wiki/)
-    * [**區塊鏈**](/wiki/區塊鏈/)
-        * [01以太坊官方客戶端-Geth](/wiki/區塊鏈/01以太坊官方客戶端-Geth.md)
+    * [**blockchain**](/wiki/blockchain/)
+        * [01以太坊客戶端-Geth](/wiki/blockchain/01以太坊客戶端-Geth.md)
     * [**未整理**](/wiki/未整理/)
         * [敏捷開發](/wiki/未整理/敏捷開發.md)
