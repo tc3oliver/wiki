@@ -28,7 +28,7 @@
 
 1. Setup: Challenger 使用 _Setup_ 演算法產生 `params` 及 `Master key` ，攻擊者獲取公開的 `params` ，挑戰者擁有 `Master key`
 
-2. Phase 1: 攻擊者發出 m ($q_{m+1}$ ... $q_{n}$) 個查詢，每個查詢($q_{i}$)都使用兩個演算法
+2. Phase 1: 攻擊者發出 m ($q_{m+1}{\cdots}q_{n}$) 個查詢，每個查詢($q_{i}$)都使用兩個演算法
 
    1. _Extract_ : 攻擊者選擇(IDi)，挑戰者使用 _Extract_ 演算法，並將 `Did` 私鑰發送給攻擊者
    2. _Decrypt_ : 攻擊者選擇(IDi, Ci)，挑戰者使用 _Decrypt_ 演算法，將 密文 Ci 解密，並將解密後的`明文`發送給攻擊者
@@ -38,7 +38,7 @@
    1. 攻擊者選擇兩個相等長度的明文 $M_{0}$、$M_{1}$，及一個 `user ID (公鑰)` ，條件是 ID 在第一階段的查詢中沒被查過
    2. 挑戰者隨機選擇 `b` (0 或 1) ，對 $M_{0}$ 或 $M_{1}$ 做加密，產出 `密文 C` 作為攻擊者的挑戰
 
-4. Phase 2: 攻擊者發出更多額外的查詢 queries $q_{m+1}$ ... $q_{n}$，可以使用如 Phase 1 一樣的操作，條件是不能是 Challenge 階段產生的 ID, C
+4. Phase 2: 攻擊者發出更多額外的查詢 queries $q_{m+1}{\cdots}q_{n}$，可以使用如 Phase 1 一樣的操作，條件是不能是 Challenge 階段產生的 ID, C
 
 5. Guess: 攻擊者猜測 `b'`，如果 b' = b 則代表攻擊者獲勝
 
