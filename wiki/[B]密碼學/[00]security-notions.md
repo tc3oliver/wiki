@@ -87,12 +87,6 @@ tags: `cryptography`
 
 不同於正常的 CCA ，因為攻擊者可以透過公開的 `Extract` 演算法獲取私鑰，所以必須允許攻擊者選擇任意 ID 產生的私鑰，這個動作叫 `private key extraction queries`, 安全概念 `IND-ID-CCA`
 
-## 問題
-
-- Q: 不理解 `語義安全性` 的目標是什麼，有些文章說 IND-CPA = SS
-- Q: polynomially bounded (有界多項式的)
-- Q: PPT adversary (Probabilistic Polynomial-Time Adversaries)
-
 ---
 
 ## References
