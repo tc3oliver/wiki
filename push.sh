@@ -1,7 +1,7 @@
 #!/bin/bash
 
 cur_sec=`date '+%s'`
-sh sidebar.sh
+python sidebar.py
 
 sleep 1s
 
