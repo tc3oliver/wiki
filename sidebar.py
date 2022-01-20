@@ -14,7 +14,8 @@ for subdir, dirs, files in os.walk(rootdir):
         f.write("* [Home](/)\n")
         # README => 標題
         path = subdir.replace(".", "") + "/"
-        f.write("* [{}]({})\n".format(subdir.split("/")[-1], path))
+        title = subdir.split("/")[-1].split(']')[-1]
+        f.write("* [{}]({})\n".format(title, path))
 
         for file in files:
             if ".md" in file:
