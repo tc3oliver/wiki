@@ -3,8 +3,9 @@ import os
 
 rootdir = "./wiki"
 
-for subdir, dirs, files in os.walk(rootdir):
-
+for subdir, dirs, files in sorted(os.walk(rootdir)):
+    dirs = sorted(dirs)
+    files = sorted(files)
     if subdir == rootdir:
         continue
 
@@ -38,7 +39,9 @@ for subdir, dirs, files in os.walk(rootdir):
 
 root_file = open('_sidebar.md', "w")
 root_file.write("* [Home](/)\n")
-for subdir, dirs, files in os.walk(rootdir):
+for subdir, dirs, files in sorted(os.walk(rootdir)):
+    # dirs = sorted(dirs)
+    # files = sorted(files)
     if subdir == rootdir:
         continue
     # wiki下只有一層的資料夾
