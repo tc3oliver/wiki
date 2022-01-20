@@ -11,7 +11,7 @@ for subdir, dirs, files in os.walk(rootdir):
     # wiki下只有一層的資料夾
     if not dirs:
         f = open(subdir + "/_sidebar.md", "w")
-        f.write("* [Home](/)\n")
+        f.write("* [< Home](/)\n")
         # README => 標題
         path = subdir.replace(".", "") + "/"
         title = subdir.split("/")[-1]
