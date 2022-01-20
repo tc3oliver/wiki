@@ -26,7 +26,7 @@
 
 遊戲過程
 
-1. Setup: Challenger 使用 _Setup_ 演算法產生 **`params`** 及 **`Master key`**，攻擊者獲取公開的 **`params`** ，挑戰者擁有 **`Master key`**
+1. Setup: Challenger 使用 _Setup_ 演算法產生 `params` 及 `Master key` ，攻擊者獲取公開的 `params` ，挑戰者擁有 `Master key`
 
 2. Phase 1: 攻擊者發出 m ($q_{m+1}$ ... $q_{n}$) 個查詢，每個查詢($q_{i}$)都使用兩個演算法
 
