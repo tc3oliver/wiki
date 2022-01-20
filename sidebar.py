@@ -14,7 +14,9 @@ for subdir, dirs, files in os.walk(rootdir):
         f.write("* [Home](/)\n")
         # README => 標題
         path = subdir.replace(".", "") + "/"
-        title = subdir.split("/")[-1].split(']')[-1]
+        title = subdir.split("/")[-1]
+        if ']' in title:
+            title = title.split(']')[-1]
         f.write("* [{}]({})\n".format(title, path))
 
         for file in files:
@@ -27,6 +29,9 @@ for subdir, dirs, files in os.walk(rootdir):
                     continue
                 else:
                     path = subdir.replace(".", "") + "/" + name
+                    if ']' in name:
+                        name = name.split(']')[-1]
+                    
                     f.write("  * [{}]({})\n".format(name, path))
         f.close()
 
