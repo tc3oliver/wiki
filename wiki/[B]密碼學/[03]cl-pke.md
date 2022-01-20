@@ -22,11 +22,11 @@
 ### 六個查詢
 
 1. Public-key retrieve query ($ID$)
-2. Public-key replace query ($ID$, $PK'_{id}$)
+2. Public-key replace query ($ID$, ${PK}'_{id}$)
 3. Initial key extract query ($ID$)
 4. Time key update query ($ID$, $t$)
 5. Secret value extract query ($ID$)
-6. Decryption query ($ID$, $PK'_{id}$, $C$)
+6. Decryption query ($ID$, ${PK}'_{id}$, $C$)
 
 ### 四個角色
 
