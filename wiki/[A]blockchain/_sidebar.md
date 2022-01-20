@@ -1,5 +1,3 @@
 * [Home](/)
 * [[A]blockchain](/wiki/[A]blockchain/)
   * [01以太坊客戶端-Geth](/wiki/[A]blockchain/01以太坊客戶端-Geth)
-* [[Z]未整理](/wiki/[Z]未整理/)
-  * [敏捷開發](/wiki/[Z]未整理/敏捷開發)
