@@ -5,3 +5,4 @@
   * [RIBE](/wiki/[B]密碼學/[02]RIBE)
   * [CL-PKE](/wiki/[B]密碼學/[03]CL-PKE)
   * [RCL-PKE](/wiki/[B]密碼學/[04]RCL-PKE)
+  * [對稱加密、PKI和IBE密鑰管理方式比較](/wiki/[B]密碼學/[05]對稱加密、PKI和IBE密鑰管理方式比較)
