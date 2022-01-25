@@ -2,7 +2,7 @@
 * [blockchain](/wiki/[A]blockchain/)
   * [以太坊客戶端-Geth](/wiki/[A]blockchain/[01]以太坊客戶端-Geth)
 * [密碼學](/wiki/[B]密碼學/)
-  * [Security-Notions](/wiki/[B]密碼學/[00]Security-Notions)
+  * [security-notions](/wiki/[B]密碼學/[00]security-notions)
   * [IBE](/wiki/[B]密碼學/[01]IBE)
   * [RIBE](/wiki/[B]密碼學/[02]RIBE)
   * [CL-PKE](/wiki/[B]密碼學/[03]CL-PKE)
