@@ -1,3 +1,3 @@
 * [< Home](/)
 * [AWS](/wiki/[E]AWS/)
-  * [AWS route53 使用 certbot 申請免費SSL憑證](/wiki/[E]AWS/[01]AWS route53 使用 certbot 申請免費SSL憑證)
+  * [AWS_route53_使用_certbot_申請免費SSL憑證](/wiki/[E]AWS/[01]AWS_route53_使用_certbot_申請免費SSL憑證)
