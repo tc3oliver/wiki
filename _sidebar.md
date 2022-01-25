@@ -10,6 +10,8 @@
   * [對稱加密、PKI和IBE密鑰管理方式比較](/wiki/[B]密碼學/[05]對稱加密、PKI和IBE密鑰管理方式比較)
 * [Flutter](/wiki/[C]Flutter/)
   * [套件開發](/wiki/[C]Flutter/[01]套件開發)
+* [AIOT](/wiki/[D]AIOT/)
+  * [rv1126參考資料](/wiki/[D]AIOT/[01]rv1126參考資料)
 * [未整理](/wiki/[Z]未整理/)
   * [LaTeX公式](/wiki/[Z]未整理/LaTeX公式)
   * [docsify-katex](/wiki/[Z]未整理/docsify-katex)
