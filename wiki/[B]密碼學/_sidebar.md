@@ -1,6 +1,6 @@
 * [< Home](/)
 * [密碼學](/wiki/[B]密碼學/)
-  * [security-notions](/wiki/[B]密碼學/[00]security-notions)
+  * [Security-Notions](/wiki/[B]密碼學/[00]Security-Notions)
   * [IBE](/wiki/[B]密碼學/[01]IBE)
   * [RIBE](/wiki/[B]密碼學/[02]RIBE)
   * [CL-PKE](/wiki/[B]密碼學/[03]CL-PKE)
