@@ -26,6 +26,14 @@
 1. 每篇心得都推 [AWS 常見問答集](https://aws.amazon.com/tw/faqs/?nc1=h_ls)
 2. [Jayendra's Cloud Certification Blog](https://jayendrapatil.com/aws-certified-solution-architect-professional-exam-learning-path/)
 
+### 整理需要讀的快速連結
+
+通勤時可以看
+
+- [Amazon EMR 常見問答集](https://aws.amazon.com/tw/emr/faqs/?nc=sn&loc=5)
+- [AWS Direct Connect 常見問答集](https://aws.amazon.com/tw/directconnect/faqs/)
+- [Amazon Route 53 決定運作狀態檢查是否良好的方式](https://docs.aws.amazon.com/zh_tw/Route53/latest/DeveloperGuide/dns-failover-determining-health-of-endpoints.html)
+
 ## 心得
 
 1. [AWS Certified Solution Architect – Professional(SAP-C01) 考試準備](https://shazi.info/aws-certified-solution-architect-professionalsap-c01-%E8%80%83%E8%A9%A6%E6%BA%96%E5%82%99/)
