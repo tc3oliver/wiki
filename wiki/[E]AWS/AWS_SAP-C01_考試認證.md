@@ -28,11 +28,12 @@
 
 ### 整理需要讀的快速連結
 
-通勤時可以看
+整理自己常搞錯的資料，通勤時可以看
 
 - [Amazon EMR 常見問答集](https://aws.amazon.com/tw/emr/faqs/?nc=sn&loc=5)
 - [AWS Direct Connect 常見問答集](https://aws.amazon.com/tw/directconnect/faqs/)
 - [Amazon Route 53 決定運作狀態檢查是否良好的方式](https://docs.aws.amazon.com/zh_tw/Route53/latest/DeveloperGuide/dns-failover-determining-health-of-endpoints.html)
+- [AWS Database Migration Service 常見問答集](https://aws.amazon.com/tw/dms/faqs/)
 
 ## 心得
 
