@@ -19,6 +19,8 @@
   * [AWS_route53_使用_certbot_申請免費SSL憑證](/wiki/[E]AWS/[01]AWS_route53_使用_certbot_申請免費SSL憑證)
 * [音視訊相關](/wiki/[F]音視訊相關/)
   * [WebRTC統計資訊](/wiki/[F]音視訊相關/[99]WebRTC統計資訊)
+* [Serverless框架](/wiki/[G]Serverless框架/)
+  * [配置](/wiki/[G]Serverless框架/[00]配置)
 * [未整理](/wiki/[Z]未整理/)
   * [LaTeX公式](/wiki/[Z]未整理/LaTeX公式)
   * [docsify-katex](/wiki/[Z]未整理/docsify-katex)

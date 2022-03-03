@@ -76,3 +76,29 @@
 - user’s secret key $SID_0$
 - private key (($DID_{0,1}$,$DID_{0,2}$), ($SID_{0,1}$,$SID_{0,2}$))
 - public key $PID = (QID,RID)$
+
+---
+
+## Encrypt
+
+- PP
+  $\\\ =\ (G,\ G_T,\ e,\ p,\ g,\ X_T\ U_0\ U_1\ E\ D)$
+- Public Key
+  $\\\ =\ (QID,\ RID)
+  \\\ =\ (g^{\gamma},\ e(g^z,\ g))$
+- User Identity = id
+- msg = m
+
+## Decrypt
+
+- Private Key
+  $\\\ =\ ((DID_{0,1},DID_{0,2}),\ (SID_{0,1},SID_{0,2})) \\\ =\ ((g^{\beta}, DID_0 \cdot g^{-\beta}),\ (g^{\omega}, SID_0 \cdot g^{-\omega}))$
+
+  1. $DID_0\ =\ X\ \cdot \ (U_0,\ U_1^{ID})^{\gamma}$
+     - $X\ =\ g^x$
+  2. $SID_0\ =\ g^z$
+  3. random numbers $x,\ z,\ \gamma,\ \omega,\ \beta \in Z_p^*$
+
+- $DID_0\ =\ X \cdot (U_0,\ U_1^ID)^{\gamma}$
+- $SID_0\ =\ g^z$
+- Ciphertext = c
