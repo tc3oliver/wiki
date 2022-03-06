@@ -17,6 +17,7 @@
 * [AWS](/wiki/[E]AWS/)
   * [AWS_SAP-C01_考試認證](/wiki/[E]AWS/AWS_SAP-C01_考試認證)
   * [AWS_route53_使用_certbot_申請免費SSL憑證](/wiki/[E]AWS/[01]AWS_route53_使用_certbot_申請免費SSL憑證)
+  * [DynamoDB_筆記](/wiki/[E]AWS/[02]DynamoDB_筆記)
 * [音視訊相關](/wiki/[F]音視訊相關/)
   * [WebRTC統計資訊](/wiki/[F]音視訊相關/[99]WebRTC統計資訊)
 * [Serverless框架](/wiki/[G]Serverless框架/)
@@ -26,4 +27,5 @@
   * [docsify-katex](/wiki/[Z]未整理/docsify-katex)
   * [敏捷開發](/wiki/[Z]未整理/敏捷開發)
 * [草稿](/wiki/草稿/)
+  * [CL-PK](/wiki/草稿/CL-PK)
   * [test](/wiki/草稿/test)
