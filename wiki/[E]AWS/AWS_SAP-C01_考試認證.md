@@ -3,12 +3,6 @@
 ## 給自己一個挑戰
 
 背景：使用 AWS 一些服務做過一個專案，沒有考過前面的認證  
-目標：利用過年時間備考並於年後一個月內考試
-
-### 直上 Solution Architect – Professional
-
-![aws certification difficulty levels](https://cdn.jsdelivr.net/gh/tc3oliver/ImageHosting/img/202201281117864.jpeg)
-看了很多資料，知道現在可以不用考前面的，雖然知道不容易很可能考不過，不過就試試看吧，直上聽起來就是酷
 
 ## SAP
 
