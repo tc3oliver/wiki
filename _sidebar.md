@@ -27,7 +27,3 @@
   * [SSL-Let’s-Encrypt](/wiki/[Z]未整理/SSL-Let’s-Encrypt)
   * [docsify-katex](/wiki/[Z]未整理/docsify-katex)
   * [敏捷開發](/wiki/[Z]未整理/敏捷開發)
-* [草稿](/wiki/草稿/)
-  * [0312網路安全](/wiki/草稿/0312網路安全)
-  * [0319](/wiki/草稿/0319)
-  * [CL-PK](/wiki/草稿/CL-PK)

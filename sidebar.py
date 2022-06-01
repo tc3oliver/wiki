@@ -6,7 +6,7 @@ rootdir = "./wiki"
 for subdir, dirs, files in sorted(os.walk(rootdir)):
     dirs = sorted(dirs)
     files = sorted(files)
-    if subdir == rootdir:
+    if subdir == rootdir or '草稿' in subdir:
         continue
 
     # wiki下只有一層的資料夾
@@ -42,7 +42,9 @@ root_file.write("* [Home](/)\n")
 for subdir, dirs, files in sorted(os.walk(rootdir)):
     # dirs = sorted(dirs)
     # files = sorted(files)
-    if subdir == rootdir:
+    
+    
+    if subdir == rootdir or '草稿' in subdir:
         continue
     # wiki下只有一層的資料夾
     if not dirs:
