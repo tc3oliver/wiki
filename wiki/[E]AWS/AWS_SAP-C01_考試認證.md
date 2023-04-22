@@ -1,9 +1,5 @@
 # AWS Certified Solution Architect – Professional(SAP-C01) 考試認證
 
-## 給自己一個挑戰
-
-背景：使用 AWS 一些服務做過一個專案，沒有考過前面的認證  
-
 ## SAP
 
 考試[介紹](https://aws.amazon.com/tw/certification/certified-solutions-architect-professional/)

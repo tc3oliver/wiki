@@ -1,4 +1,5 @@
 #!/bin/bash
+git pull
 
 cur_sec=`date '+%s'`
 python sidebar.py
