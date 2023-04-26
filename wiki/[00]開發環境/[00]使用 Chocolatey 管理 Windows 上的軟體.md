@@ -123,3 +123,5 @@ choco install -y python nodejs golang flutter dotnetcore-sdk visualstudio2019com
 此腳本將自動安裝 Python、Node.js、Golang、Flutter、.NET SDK 和 Visual Studio、PyCharm、GoLand、Visual Studio Code、Git、Docker、Postman 和 Teams。 
 
 -y 選項將自動確認所有提示，這樣安裝過程將不需要任何人工干預。
+
+![](https://cdn.jsdelivr.net/gh/tc3oliver/ImageHosting/img/202304261352600.png)
