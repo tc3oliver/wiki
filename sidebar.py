@@ -33,6 +33,7 @@ for subdir, dirs, files in sorted(os.walk(rootdir)):
                     if ']' in name:
                         name = name.split(']')[-1]
                     
+                    path = path.replace(' ', '%20')
                     f.write("  * [{}]({})\n".format(name, path))
         f.close()
 
@@ -52,7 +53,6 @@ for subdir, dirs, files in sorted(os.walk(rootdir)):
         with open(path) as f:
             for line in f.readlines():
                 if 'Home' in line: continue
-                line = line.replace(' ', '%20')
                 root_file.write(line)
                 
 root_file.close()
