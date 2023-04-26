@@ -52,7 +52,7 @@ for subdir, dirs, files in sorted(os.walk(rootdir)):
         with open(path) as f:
             for line in f.readlines():
                 if 'Home' in line: continue
-                line.replace(' ', '%20')
+                line = line.replace(' ', '%20')
                 root_file.write(line)
                 
 root_file.close()
