@@ -37,7 +37,6 @@ def get_parent_path(path):
 
 
 def create_sidebar(path):
-    print(path)
     # 如果指定路徑下沒有 README.md，就建立一個，標題為資料夾名稱
     create_readme_if_not_exists(path)
     # 讀取目錄
@@ -82,6 +81,8 @@ def create_sidebar(path):
             dir_name = os.path.basename(dir_path)
             dir_link = os.path.join(path, dir_name)
             dir_link = dir_link.replace("./", "/")
+            dir_link = dir_link.replace(' ', '%20')
+
             # 在 _sidebar.md 中添加資料夾的連結
             with open(sidebar_path, "a") as f:
                 f.write(f"  * [📁 {dir_name}]({dir_link}/)\n")
