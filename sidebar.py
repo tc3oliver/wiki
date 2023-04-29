@@ -1,5 +1,6 @@
 import os
 
+
 def create_readme_if_not_exists(path):
     """
     如果指定路徑下沒有 README.md，就建立一個，標題為資料夾名稱
@@ -19,6 +20,7 @@ def create_readme_if_not_exists(path):
                 folder_name = folder_name.split(']')[-1]
             f.write(f'# {folder_name}')
             print('README.md created')
+
 
 def get_parent_path(path):
     # 拆分路徑字串為一個列表
@@ -44,32 +46,26 @@ def create_sidebar(path):
     # 篩選出資料夾和檔案
     dirs = [d for d in dirs if os.path.isdir(
         os.path.join(path, d)) or d.endswith(".md")]
-    
+
     # 排序資料夾和檔案
     dirs.sort()
-    dirs.sort(key=lambda x: ( x.endswith('.md'), x))
+    dirs.sort(key=lambda x: (x.endswith('.md'), x))
 
     # 設定 _sidebar.md 的檔案路徑
     sidebar_path = os.path.join(path, "_sidebar.md")
-    # 清空 _sidebar.md 的內容
+    
     with open(sidebar_path, "w") as f:
+        # 清空 _sidebar.md 的內容
         f.write("")
         # 寫第一行返回鍵
         pp = get_parent_path(path).replace("./", "/")
 
         if pp == '/wiki':
             pp = '/'
-
-            n = path.split('/')[-1]
-            if ']' in n:
-                n = n.split(']')[-1]
-            f.write(f"* [⬅︎]({pp})\n")
-            f.write(f"* [{n}]({path+'/'})\n")
-
         else:
             pp += '/'
-            f.write(f"* [⬅︎]({pp})\n")
-        
+            
+        f.write(f"* [⬅︎]({pp})\n")
 
     # 處理每個資料夾和檔案
     for d in dirs:
@@ -121,21 +117,32 @@ root_file.write("* [Home](/)\n")
 
 list = []
 for subdir, dirs, files in os.walk(rootdir, topdown=True):
-    if subdir != rootdir: dirs.clear()  # 遍歷子目錄時，清空子目錄列表，防止遞迴深入
-    if not dirs: list.append((subdir, dirs, files))
+    if subdir != rootdir:
+        dirs.clear()  # 遍歷子目錄時，清空子目錄列表，防止遞迴深入
+    if not dirs:
+        list.append((subdir, dirs, files))
 
 for subdir, _, _ in sorted(list):
 
     if subdir == rootdir or '草稿' in subdir:
         continue
-    
+
     create_sidebar(subdir)
 
-    path = subdir + "/_sidebar.md"
+    dir_name = os.path.basename(subdir)
+    dir_link = subdir
+    dir_link = dir_link.replace("./", "/")
+    dir_link = dir_link.replace(' ', '%20')
+    if ']' in dir_name:
+                dir_name = dir_name.split(']')[-1]
 
-    with open(path) as f:
-            for line in f.readlines():
-                if '⬅︎' in line: continue
-                root_file.write(line)
+    root_file.write(f"* [📁 {dir_name}]({dir_link}/)\n")
+
+    # path = subdir + "/_sidebar.md"
+
+    # with open(path) as f:
+    #         for line in f.readlines():
+    #             if '⬅︎' in line: continue
+    #             root_file.write(line)
 
 root_file.close()
