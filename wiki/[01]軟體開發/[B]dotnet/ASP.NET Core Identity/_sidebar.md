@@ -1,0 +1,8 @@
+* [⬅︎](/wiki/[01]軟體開發/[B]dotnet/)
+  * [📄 瞭解 ASP.NET Core Identity 的基礎知識](/wiki/[01]軟體開發/[B]dotnet/ASP.NET%20Core%20Identity/[01]瞭解%20ASP.NET%20Core%20Identity%20的基礎知識)
+  * [📄 建立自訂的使用者資料模型](/wiki/[01]軟體開發/[B]dotnet/ASP.NET%20Core%20Identity/[02]建立自訂的使用者資料模型)
+  * [📄 實作身分驗證和授權](/wiki/[01]軟體開發/[B]dotnet/ASP.NET%20Core%20Identity/[03]實作身分驗證和授權)
+  * [📄 實作社交登入功能](/wiki/[01]軟體開發/[B]dotnet/ASP.NET%20Core%20Identity/[04]實作社交登入功能)
+  * [📄 實作帳戶管理功能](/wiki/[01]軟體開發/[B]dotnet/ASP.NET%20Core%20Identity/[05]實作帳戶管理功能)
+  * [📄 帳戶確認和雙因素驗證](/wiki/[01]軟體開發/[B]dotnet/ASP.NET%20Core%20Identity/[06]帳戶確認和雙因素驗證)
+  * [📄 實作 Web 和 App 共用使用者](/wiki/[01]軟體開發/[B]dotnet/ASP.NET%20Core%20Identity/[07]實作%20Web%20和%20App%20共用使用者)
