@@ -71,6 +71,10 @@
         whatsapp: true,
         telegram: true,
       },
+      latex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']], // default
+        displayMath: [['$$', '$$']],               // default
+      },
       plugins: [
         EditOnGithubPlugin.create(
           'https://github.com/tc3oliver/wiki/tree/main/',
