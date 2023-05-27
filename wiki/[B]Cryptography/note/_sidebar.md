@@ -1,8 +1,0 @@
-* [⬅︎](/wiki/[B]Cryptography/)
-  * [📄 Security-Notions](/wiki/[B]Cryptography/note/[00]Security-Notions)
-  * [📄 IBE](/wiki/[B]Cryptography/note/[01]IBE)
-  * [📄 RIBE](/wiki/[B]Cryptography/note/[02]RIBE)
-  * [📄 CL-PKE](/wiki/[B]Cryptography/note/[03]CL-PKE)
-  * [📄 RCL-PKE](/wiki/[B]Cryptography/note/[04]RCL-PKE)
-  * [📄 對稱加密、PKI和IBE密鑰管理方式比較](/wiki/[B]Cryptography/note/[05]對稱加密、PKI和IBE密鑰管理方式比較)
-  * [📄 LR-CL-KE](/wiki/[B]Cryptography/note/[06]LR-CL-KE)

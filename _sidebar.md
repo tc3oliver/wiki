@@ -1,5 +1,5 @@
 * [Home](/)
 * [📁 開發環境](/wiki/[00]開發環境/)
 * [📁 軟體開發](/wiki/[01]軟體開發/)
-* [📁 Cryptography](/wiki/[B]Cryptography/)
+* [📁 密碼學](/wiki/[02]密碼學/)
 * [📁 未整理](/wiki/[Z]未整理/)
