@@ -1,4 +1,4 @@
-# 密碼學
+# 資訊安全
 
   * [📁 cryptography and network security](/wiki/[02]資訊安全/cryptography%20and%20network%20security/)
   * [📁 note](/wiki/[02]資訊安全/note/)
