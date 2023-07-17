@@ -108,7 +108,7 @@ sudo defaults write /Library/Preferences/com.apple.RemoteManagement.plist VNCOnl
 
 這行命令將 VNCOnlyLocalConnections 選項設定為 yes,表示 macOS 僅接受來自本地主機的 VNC 連線。
 
-透過這個設定,我只能通過 Mac Mini 本機的屏幕、鍵盤和滑鼠來控制它,防止遭到外部的 VNC 攻擊。這又為我的小型伺服器新增了一層安全防護。
+透過這個設定，VNC 只能在 Mac Mini 的本地環境中進行控制，防止直接從外部進行的 VNC 攻擊。然而，為了實現安全的遠程訪問 VNC 服務，我可以使用 SSH 隧道來進行連接。透過 SSH 隧道，所有的 VNC 流量都會被加密並通過安全的通道傳輸，從而提供了進一步的網路安全保護。這樣，我可以在維持 VNC 服務的安全性的同時，遠程訪問我的小型伺服器。
 
 ## 6. 使用 SSH 隧道連接 VNC
 
